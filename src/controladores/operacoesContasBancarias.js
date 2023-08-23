@@ -1,5 +1,5 @@
 const { contas, depositos, saques, transferencias } = require('../dados/bancodedados');
-const { encontrarNumeroDaConta, encontrarSenhaDaConta, criarDataFormatada, extratoDaConta } = require('./funcoesSecundarias')
+const { encontrarNumeroDaConta, encontrarSenhaDaConta, criarDataFormatada, extratoDaConta, contaNaoEncontrada } = require('./funcoesSecundarias')
 
 let novoIdContaBancaria = contas.length + 1;
 
@@ -214,10 +214,12 @@ const transferenciaBancaria = (req, res) => {
     const numeroContaOrigem = encontrarNumeroDaConta(contas, numero_conta_origem);
     const numeroContaDestino = encontrarNumeroDaConta(contas, numero_conta_destino);
     
-    if (!numeroContaDestino || !numeroContaOrigem) {
-        return res.status(400).json({ 
-            mensagem: 'Conta bancária não encontada!'
-        });
+    if(!numeroContaDestino) {
+        return contaNaoEncontrada(res, 'destino');
+    }
+
+    if(!numeroContaOrigem) {
+        return contaNaoEncontrada(res, 'origem');
     }
 
     if(numeroContaOrigem === numeroContaDestino) {
