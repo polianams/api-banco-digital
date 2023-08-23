@@ -1,20 +1,20 @@
 # 🏦 Back-end - API REST de um Banco Digital
 
 <p align="center">
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/polianams/api-banco-digital?color=%2304D361">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/polianams/desafio-backend-m02-b2bt05?color=%2304D361">
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/polianams/api-banco-digital">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/polianams/desafio-backend-m02-b2bt05">
   
-  <a href="https://github.com/polianams/api-banco-digital/commits/main">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/polianams/api-banco-digital">
+  <a href="https://github.com/polianams/desafio-backend-m02-b2bt05/commits/main">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/polianams/desafio-backend-m02-b2bt05">
   </a>
   
-   <a href="https://www.linkedin.com/in/polianams/">
+   <a href="https://cubos.academy/](https://www.linkedin.com/in/polianams/">
     <img alt="Feito por Poliana Santos" src="https://img.shields.io/badge/feito-por%20Poliana%20Santos-D818A5">
    </a>
    
-   <a href="https://github.com/polianams/api-banco-digital/stargazers">
-    <img alt="Stargazers" src="https://img.shields.io/github/stars/polianams/api-banco-digital?style=social">
+   <a href="https://github.com/polianams/desafio-backend-m02-b2bt05/stargazers">
+    <img alt="Stargazers" src="https://img.shields.io/github/stars/polianams/desafio-backend-m02-b2bt05?style=social">
   </a>
 </p>
 
@@ -52,7 +52,7 @@ A estrutura da API REST foi organizada de forma a manter a clareza e a modularid
 
 - Arquivo `index.js`: Este é o ponto de entrada da aplicação, onde a execução do servidor é iniciada. Ele configura as dependências necessárias e inicia a escuta por requisições;
 
-- Pasta `controladores`: A pasta controllers contém os arquivos `operacoesContasBancarias.js` e `funcoesSecundarias.js`, que abriga todas as funções responsáveis por executar as operações relacionadas às rotas da API
+- Pasta `controladores`: A pasta controladores contém os arquivos `operacoesContasBancarias.js` e `funcoesSecundarias.js`, que abriga todas as funções responsáveis por executar as operações relacionadas às rotas da API;
 - Arquivo `rotas.js`: Lugar onde todas as rotas da API são definidas;
 
 - Pasta `dados`: Dentro dessa pasta você encontrará o arquivo `bancodedados.js` responsável por armazenar dados em memória usando um objeto no próprio arquivo;
@@ -87,7 +87,88 @@ A estrutura da API REST foi organizada de forma a manter a clareza e a modularid
 
 <h1 align="center">
     <img alt="digital-bank" title="digitalBank" src="assets/banco-digital-1.gif" />
+    <img alt="digital-bank" title="digitalBank" src="assets/banco-digital-2.gif" />
+    <img alt="digital-bank" title="digitalBank" src="assets/banco-digital-3.gif" />
 </h1>
+
+Exemplos de Endpoints:
+
+1. Listar contas bancárias:
+
+- `GET` `/contas?senha_banco=Cubos123Bank`
+
+2. Criar conta bancária:
+
+- `POST` `/contas`
+- Exemplo de requisição:
+  `{
+    "nome": "Poliana Santos",
+    "cpf": "00011122234",
+    "data_nascimento": "2021-03-15",
+    "telefone": "71999998888",
+    "email": "poliana@cubos.com",
+    "senha": "1234"
+}`
+
+3. Atualizar usuário da conta bancária:
+
+- `PUT` `/contas/:numeroConta/usuario`
+- Exemplo de requisição:
+  `{
+    "nome": "Poliana Santos",
+    "cpf": "00011122234",
+    "data_nascimento": "2021-03-15",
+    "telefone": "71999998888",
+    "email": "poliana@cubos.com",
+    "senha": "1234"
+}`
+
+4. Excluir Conta:
+
+- `DELETE` `/contas/:numeroConta`
+
+5. Depositar Recurso:
+
+- `POST` `/transacoes/depositar`
+- Exemplo de Requisição:
+  `{
+	"numero_conta": "1",
+	"valor": 1900
+}`
+
+6. Sacar Recurso:
+
+- `POST` `/transacoes/sacar`
+- Exemplo de Requisição:
+  `{
+	"numero_conta": "1",
+	"valor": 1900,
+  "senha": "123456"
+}`
+
+7. Tranferir Recursos entre duas contas:
+
+- `POST` `/transacoes/transferir`
+- Exemplo de Requisição:
+  `{
+  "numero_conta_origem": "1",
+  "numero_conta_destino": "2",
+  "valor": 200,
+  "senha": "123456"
+}`
+
+8. Saldo de uma conta:
+
+- `GET` `/contas/saldo?numero_conta=123&senha=123`
+- Exemplo de Requisição:
+  `{
+  "numero_conta": "1",
+  "senha": "123456"
+}`
+
+9. Exibir Extrato da Conta Bancária:
+
+- `GET` `/contas/extrato?numero_conta=123&senha=123`
 
 ## 🤝 Contribuição
 
