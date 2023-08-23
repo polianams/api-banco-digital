@@ -1,20 +1,20 @@
 # 🏦 Back-end - API REST de um Banco Digital
 
 <p align="center">
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/polianams/desafio-backend-m02-b2bt05?color=%2304D361">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/polianams/api-banco-digital?color=%2304D361">
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/polianams/desafio-backend-m02-b2bt05">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/polianams/api-banco-digital">
   
   <a href="https://github.com/polianams/desafio-backend-m02-b2bt05/commits/main">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/polianams/desafio-backend-m02-b2bt05">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/polianams/api-banco-digital">
   </a>
   
    <a href="https://cubos.academy/](https://www.linkedin.com/in/polianams/">
     <img alt="Feito por Poliana Santos" src="https://img.shields.io/badge/feito-por%20Poliana%20Santos-D818A5">
    </a>
    
-   <a href="https://github.com/polianams/desafio-backend-m02-b2bt05/stargazers">
-    <img alt="Stargazers" src="https://img.shields.io/github/stars/polianams/desafio-backend-m02-b2bt05?style=social">
+   <a href="https://github.com/polianams/api-banco-digital/stargazers">
+    <img alt="Stargazers" src="https://img.shields.io/github/stars/polianams/api-banco-digital?style=social">
   </a>
 </p>
 
