@@ -9,7 +9,7 @@
     <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/polianams/api-banco-digital">
   </a>
   
-   <a href="https://www.linkedin.com/in/polianams/](https://www.linkedin.com/in/polianams/">
+   <a href="https://www.linkedin.com/in/polianams/">
     <img alt="Feito por Poliana Santos" src="https://img.shields.io/badge/feito-por%20Poliana%20Santos-D818A5">
    </a>
    
