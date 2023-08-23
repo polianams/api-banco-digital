@@ -1,0 +1,20 @@
+{
+  "name": "desafio-backend-m02-b2bt05",
+  "version": "1.0.0",
+  "description": "Bem-vindo à API de Banco Digital! Este projeto consiste em uma API REST desenvolvida para simular operações bancárias, como criação de contas, saques, transferências e muito mais. O objetivo é fornecer uma base para a construção de um sistema completo de Banco Digital, seguindo os padrões REST e utilizando tecnologias modernas.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ./src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "date-fns": "^2.30.0",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
