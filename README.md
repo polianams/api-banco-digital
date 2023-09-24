@@ -5,11 +5,11 @@
 
   <img alt="Repository size" src="https://img.shields.io/github/repo-size/polianams/api-banco-digital">
   
-  <a href="https://github.com/polianams/desafio-backend-m02-b2bt05/commits/main">
+  <a href="https://github.com/polianams/api-banco-digital/commits/main">
     <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/polianams/api-banco-digital">
   </a>
   
-   <a href="https://cubos.academy/](https://www.linkedin.com/in/polianams/">
+   <a href="https://www.linkedin.com/in/polianams/">
     <img alt="Feito por Poliana Santos" src="https://img.shields.io/badge/feito-por%20Poliana%20Santos-D818A5">
    </a>
    
