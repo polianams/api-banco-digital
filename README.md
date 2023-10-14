@@ -1,4 +1,4 @@
-# 🏦 Back-end - API REST de um Banco Digital
+# 🏦 Back-end - API REST: Banco Digital
 
 <p align="center">
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/polianams/api-banco-digital?color=%2304D361">
