@@ -28,9 +28,9 @@
 
 ## 📝 Sobre o Projeto
 
-Este projeto consiste em uma API REST desenvolvida para simular operações bancárias, como criação de contas, saques, transferências e muito mais. O objetivo é fornecer uma base para a construção de um sistema completo de Banco Digital, seguindo os padrões REST e utilizando tecnologias modernas.
+Esse projeto é uma API REST que simula operações bancárias, proporcionando uma base para o desenvolvimento de um Banco Digital. Seguindo os padrões REST e utilizando tecnologias como Node.js e PostgreSQL, oferece funcionalidades como criação de contas, saques, transferências e histórico de transações.
 
-## 📋 Funcionalidades
+## 📋 Funcionalidades Principais
 
 Nessa API REST é possível:
 
@@ -69,11 +69,31 @@ A estrutura da API REST foi organizada de forma a manter a clareza e a modularid
 ### ⚙️ Instalação
 
 1. Clone este repositório em sua máquina local:
-2. Navegue até o diretório do projeto: `cd nome_da_pasta`;
-3. Instale as dependências através do comando: `npm install`;
-4. Para executa-lo digite no terminal do seu editor de código: `npm run dev`;
-5. No terminal, aparecerá a seguinte mensagem: `O Servidor está sendo executado na porta 3000.`;
-6. Após exibir a mensagem acima, execute o Insomnia e configure um novo ambiente para testar as rotas da API.
+2. Navegue até o diretório do projeto:
+   
+```
+cd nome_da_pasta
+```
+
+4. Instale as dependências através do comando:
+   
+```
+npm install
+```
+
+6. Para executa-lo digite no terminal do seu editor de código:
+   
+```
+npm run dev
+```
+
+8. No terminal, aparecerá a seguinte mensagem:
+   
+```
+O Servidor está sendo executado na porta 3000.
+```
+
+10. Após exibir a mensagem acima, execute o Insomnia e configure um novo ambiente para testar as rotas da API.
 
 ## 🚀 Tecnologias Utilizadas
 
@@ -91,98 +111,34 @@ A estrutura da API REST foi organizada de forma a manter a clareza e a modularid
     <img alt="digital-bank" title="digitalBank" src="assets/banco-digital-3.gif" />
 </h1>
 
-Exemplos de Endpoints:
-
-1. Listar contas bancárias:
-
-- `GET` `/contas?senha_banco=Cubos123Bank`
-
-2. Criar conta bancária:
-
-- `POST` `/contas`
-- Exemplo de requisição:
-  `{
-    "nome": "Poliana Santos",
-    "cpf": "00011122234",
-    "data_nascimento": "2021-03-15",
-    "telefone": "71999998888",
-    "email": "poliana@cubos.com",
-    "senha": "1234"
-}`
-
-3. Atualizar usuário da conta bancária:
-
-- `PUT` `/contas/:numeroConta/usuario`
-- Exemplo de requisição:
-  `{
-    "nome": "Poliana Santos",
-    "cpf": "00011122234",
-    "data_nascimento": "2021-03-15",
-    "telefone": "71999998888",
-    "email": "poliana@cubos.com",
-    "senha": "1234"
-}`
-
-4. Excluir Conta:
-
-- `DELETE` `/contas/:numeroConta`
-
-5. Depositar Recurso:
-
-- `POST` `/transacoes/depositar`
-- Exemplo de Requisição:
-  `{
-	"numero_conta": "1",
-	"valor": 1900
-}`
-
-6. Sacar Recurso:
-
-- `POST` `/transacoes/sacar`
-- Exemplo de Requisição:
-  `{
-	"numero_conta": "1",
-	"valor": 1900,
-  "senha": "123456"
-}`
-
-7. Tranferir Recursos entre duas contas:
-
-- `POST` `/transacoes/transferir`
-- Exemplo de Requisição:
-  `{
-  "numero_conta_origem": "1",
-  "numero_conta_destino": "2",
-  "valor": 200,
-  "senha": "123456"
-}`
-
-8. Saldo de uma conta:
-
-- `GET` `/contas/saldo?numero_conta=123&senha=123`
-- Exemplo de Requisição:
-  `{
-  "numero_conta": "1",
-  "senha": "123456"
-}`
-
-9. Exibir Extrato da Conta Bancária:
-
-- `GET` `/contas/extrato?numero_conta=123&senha=123`
-
 ## 🤝 Contribuição
 
 Contribuições são bem-vindas! Se você quiser melhorar ou adicionar novos recursos a esta API, siga as etapas abaixo:
 
 1. Crie um Fork deste repositório;
-2. Crie uma branch para suas alterações: `git checkout -b my-feature`;
-3. Commit suas alterações: `git commit -m 'Adicionar nova funcionalidade'`;
-4. Faça push para a branch: `git push origin my-feature`;
-5. Abra um pull request.
+2. Crie uma branch para suas alterações:
+   
+```
+git checkout -b my-feature
+```
+
+4. Commit suas alterações:
+   
+```
+git commit -m 'Adicionar nova funcionalidade'
+```
+
+6. Faça push para a branch:
+
+```
+git push origin my-feature
+```
+
+6. Abra um pull request.
 
 ## 🧙‍♂️ Autora
 
-Projeto Back-end desenvolvido por [Poliana Santos](https://www.linkedin.com/in/polianams/), como desafio do modulo 2 do curso de Desenvolvimento de Software - Foco em Back-end da [Cubos Academy](https://cubos.academy/) ✨
+Projeto Back-end desenvolvido por [Poliana Santos](https://www.linkedin.com/in/polianams/) e [Stephanie Feliciano](https://www.linkedin.com/in/stephanie-santana-feliciano-b02333131/), como desafio do modulo 2 do curso de Desenvolvimento de Software - Foco em Back-end da [Cubos Academy](https://cubos.academy/) ✨
 
 ---
 
