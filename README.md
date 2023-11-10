@@ -10,7 +10,7 @@
   </a>
   
    <a href="https://www.linkedin.com/in/polianams/">
-    <img alt="Feito por Poliana Santos" src="https://img.shields.io/badge/feito-por%20Poliana%20Santos-D818A5">
+    <img alt="Feito por Poliana Santos" src="https://img.shields.io/badge/feito-por%20Poliana%20Santos%20e%20Stephanie%20Feliciano-D818A5">
    </a>
    
    <a href="https://github.com/polianams/api-banco-digital/stargazers">
