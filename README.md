@@ -46,19 +46,6 @@ Nessa API REST é possível:
 
 ## ▶️ Como executar o projeto
 
-### 🏗️ Estrutura da API REST:
-
-A estrutura da API REST foi organizada de forma a manter a clareza e a modularidade do projeto. Os elementos da API REST estão distribuídos dentro da pasta `src`, como segue:
-
-- Arquivo `index.js`: Este é o ponto de entrada da aplicação, onde a execução do servidor é iniciada. Ele configura as dependências necessárias e inicia a escuta por requisições;
-
-- Pasta `controladores`: A pasta controladores contém os arquivos `operacoesContasBancarias.js` e `funcoesSecundarias.js`, que abriga todas as funções responsáveis por executar as operações relacionadas às rotas da API;
-- Arquivo `rotas.js`: Lugar onde todas as rotas da API são definidas;
-
-- Pasta `dados`: Dentro dessa pasta você encontrará o arquivo `bancodedados.js` responsável por armazenar dados em memória usando um objeto no próprio arquivo;
-
-- Arquivo `intermediario.js`: Contém as definições de middlewares, que são funções intermediárias que podem ser executadas antes das rotas ou após as requisições.
-
 ### 🛠️ Pré-requisitos
 
 - Possuir um editor de código-fonte, por exemplo [VSCode](https://code.visualstudio.com/download) ou [Vim](https://www.vim.org/download.php);
