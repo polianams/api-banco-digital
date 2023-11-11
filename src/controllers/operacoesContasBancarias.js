@@ -13,7 +13,6 @@ const {
 } = require("../utils/funcoesSecundarias");
 
 let novoIdContaBancaria = contas.length + 1;
-
 const listarContasBancarias = (req, res) => {
   return res.json(contas);
 };
